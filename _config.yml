@@ -12,7 +12,7 @@ title                    : "Jan-Christoph Kassing"
 title_separator          : "-"
 name                     : &name "Jan-Christoph Kassing"
 description              : &description "Theoretical Computer Scientist"
-url                      : https://JCKassing.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
+url                      : https://j-c-kassing.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "J-C-Kassing/JCKassing.github.io"
 
