@@ -12,7 +12,7 @@ title                    : "Jan-Christoph Kassing"
 title_separator          : "-"
 name                     : &name "Jan-Christoph Kassing"
 description              : &description "Theoretical Computer Scientist"
-url                      : https://j-c-kassing.github.io/JCKassing.github.io/ # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
+url                      : https://www.jckassing.com/ # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "J-C-Kassing/JCKassing.github.io"
 
@@ -74,7 +74,7 @@ author:
   youtube          : # Username
   zhihu            : # Username
 
-# Publication Category - The following the list of publication categories and their headings
+# Publication and Teaching Category - The following the list of publication categories and their headings
 publication_category:
   books:
     title: 'Books'
@@ -82,6 +82,16 @@ publication_category:
     title: 'Journal Articles'    
   conferences:
     title: 'Conference Papers'
+  preprint:
+    title: 'Preprints'
+
+teaching_category:
+  thesis:
+    title: 'Supervised Theses'
+  seminar:
+    title: 'Seminars'    
+  lecture:
+    title: 'Lectures'    
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
@@ -117,7 +127,7 @@ staticman:
       options:
         format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 atom_feed:
-  hide                   : false     # change to true to hide the RSS feed in the footer
+  hide                   : true     # change to true to hide the RSS feed in the footer
   path                   : # blank (default) uses feed.xml
 
 
