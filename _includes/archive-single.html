@@ -47,7 +47,10 @@
     {% endif %}
 
     {% if post.collection == 'teaching' %}
-        <i>{{ post.venue }}</i>, {{ post.year | default: ""}}.
+        {% if post.award %}
+          {{ post.award }}
+        {% endif %}
+        <br><i>{{ post.venue }}</i>, {{ post.year | default: ""}}.
     {% elsif post.collection == 'publications' %}
         {% if post.category == 'journal' %}
             Published in <i>{{ post.venue }}</i>, {{ post.place }}, {{ post.bookdata }}, {{ post.year | default: ""}}.
