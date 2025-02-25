@@ -27,11 +27,14 @@
       {% if author.email %}
         <li class="author__desktop"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>{{ author.email }}</li>
       {% endif %}
+      {% if author.employer %}
+        <li><a href="{{ author.employerUri }}"><i class="fas fa-fw fa-building-columns icon-pad-right" aria-hidden="true"></i>{{ author.employer }}</a></li>
+      {% endif %}
       {% if author.location %}
         <li class="author__desktop"><i class="fa-solid fa-location-dot icon-pad-right" aria-hidden="true"></i>{{ author.location }}</li>
       {% endif %}
-      {% if author.employer %}
-        <li><a href="{{ author.uri }}"><i class="fas fa-fw fa-building-columns icon-pad-right" aria-hidden="true"></i>{{ author.employer }}</a></li>
+      {% if author.room %}
+      <li class="author__room"><i class="fa-solid fa-location-dot icon-pad-right" aria-hidden="true"></i>{{ author.room }}</li>
       {% endif %}
 
       <!-- Font Awesome and Academicons icons / Academic websites -->

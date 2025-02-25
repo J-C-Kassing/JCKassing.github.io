@@ -27,7 +27,8 @@ author:
   bio              : "(Probabilistic) Program Verification, Rewriting, Termination"
   location         : "Aachen, Germany"
   employer         : "RWTH Aachen University"
-  uri              : "https://www.rwth-aachen.de"
+  room             : "Room 4209, Ahornstr. 55"
+  employerUri      : "https://www.rwth-aachen.de"
   email            : "Kassing(at)cs.rwth-aachen.de" 
 
   # Academic websites
