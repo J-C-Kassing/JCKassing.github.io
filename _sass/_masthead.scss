@@ -3,8 +3,8 @@
    ========================================================================== */
 
 .masthead {
+  background: linear-gradient(to right, $blue-grad-start, $blue-grad-end);
   position: fixed;
-  background: white;
   border-bottom: 1px solid $border-color;
   height: $masthead-height;
   top: 0;

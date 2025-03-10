@@ -52,13 +52,6 @@ layout: default
         {% if page.slidesurl %}<div><a href="{{ page.slidesurl }}" class="btn">{{ site.data.ui-text[site.locale].download_slides | default: "Download Slides" }}</a></div>{% endif %}
       </section>
 
-      <footer class="page__meta">
-        {% if site.data.ui-text[site.locale].meta_label %}
-          <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
-        {% endif %}
-        {% include page__taxonomy.html %}
-      </footer>
-
       {% include post_pagination.html %}
     </div>
 
