@@ -16,6 +16,9 @@ main:
 
   - title: "Teaching"
     url: /teaching/    
+
+  - title: "Organized Workshops"
+    url: /orga/    
         
   # - title: "Blog Posts"
   #   url: /year-archive/
