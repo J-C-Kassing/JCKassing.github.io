@@ -71,20 +71,25 @@
       <p>Recommended citation: {{ post.citation }}<br /></p>
     {% endif %}
 
-    {% if post.paperurl and post.arxivurl and post.slidesurl %}
-      <p><a href="{{ post.paperurl }}">Paper</a> | <a href="{{ post.arxivurl }}">Extended Version</a> | <a href="{{ post.slidesurl }}">Download Slides</a></p>
-    {% elsif post.paperurl and post.slidesurl %}
-      <p><a href="{{ post.paperurl }}">Download Paper</a> | <a href="{{ post.slidesurl }}">Download Slides</a></p>
-    {% elsif post.paperurl and post.arxivurl %}
-      <p><a href="{{ post.paperurl }}">Download Paper</a> | <a href="{{ post.arxivurl }}">Extended Version</a></p>
-    {% elsif post.arxivurl and post.slidesurl %}
-      <p><a href="{{ post.arxivurl }}">Extended Version</a> | <a href="{{ post.slidesurl }}">Download Slides</a></p>
-    {% elsif post.arxivurl %}
-      <p><a href="{{ post.arxivurl }}">Extended Version</a></p>
-    {% elsif post.paperurl %}
-      <p><a href=" {{ post.paperurl }} ">Download Paper</a></p>
-    {% elsif post.slidesurl %}
-      <p><a href="{{ post.slidesurl }}">Download Slides</a></p>
+    {% assign links = "" %}
+    {% if post.paperurl %}
+      {% assign links = links | append: '<a href="' | append: post.paperurl | append: '">Download Paper</a>' %}
+    {% endif %}
+    {% if post.arxivurl %}
+      {% if links != "" %}{% assign links = links | append: ' | ' %}{% endif %}
+      {% assign links = links | append: '<a href="' | append: post.arxivurl | append: '">Extended Version</a>' %}
+    {% endif %}
+    {% if post.slidesurl %}
+      {% if links != "" %}{% assign links = links | append: ' | ' %}{% endif %}
+      {% assign links = links | append: '<a href="' | append: post.slidesurl | append: '">Download Slides</a>' %}
+    {% endif %}
+    {% if post.websiteurl %}
+      {% if links != "" %}{% assign links = links | append: ' | ' %}{% endif %}
+      {% assign links = links | append: '<a href="' | append: post.websiteurl | append: '">Evaluation Website</a>' %}
+    {% endif %}
+
+    {% if links != "" %}
+      <p style="font-size: smaller">{{ links }}</p>
     {% endif %}
 
   </article>

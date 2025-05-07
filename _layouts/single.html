@@ -51,20 +51,25 @@ layout: default
           <p style="font-size: smaller">Recommended citation: {{ page.citation }}<br /></p>
         {% endif %}
 
-        {% if page.paperurl and page.arxivurl and page.slidesurl %}
-          <p style="font-size: smaller"><a href="{{ page.paperurl }}">Paper</a> | <a href="{{ page.arxivurl }}">Extended Version</a> | <a href="{{ page.slidesurl }}">Download Slides</a></p>
-        {% elsif page.paperurl and page.slidesurl %}
-          <p style="font-size: smaller"><a href="{{ page.paperurl }}">Download Paper</a> | <a href="{{ page.slidesurl }}">Download Slides</a></p>
-        {% elsif page.paperurl and page.arxivurl %}
-          <p style="font-size: smaller"><a href="{{ page.paperurl }}">Download Paper</a> | <a href="{{ page.arxivurl }}">Extended Version</a></p>
-        {% elsif page.arxivurl and page.slidesurl %}
-          <p style="font-size: smaller"><a href="{{ page.arxivurl }}">Extended Version</a> | <a href="{{ page.slidesurl }}">Download Slides</a></p>
-        {% elsif page.arxivurl %}
-          <p style="font-size: smaller"><a href="{{ page.arxivurl }}">Extended Version</a></p>
-        {% elsif page.paperurl %}
-          <p style="font-size: smaller"><a href=" {{ page.paperurl }} ">Download Paper</a></p>
-        {% elsif page.slidesurl %}
-          <p style="font-size: smaller"><a href="{{ page.slidesurl }}">Download Slides</a></p>
+        {% assign links = "" %}
+        {% if page.paperurl %}
+          {% assign links = links | append: '<a href="' | append: page.paperurl | append: '">Download Paper</a>' %}
+        {% endif %}
+        {% if page.arxivurl %}
+          {% if links != "" %}{% assign links = links | append: ' | ' %}{% endif %}
+          {% assign links = links | append: '<a href="' | append: page.arxivurl | append: '">Extended Version</a>' %}
+        {% endif %}
+        {% if page.slidesurl %}
+          {% if links != "" %}{% assign links = links | append: ' | ' %}{% endif %}
+          {% assign links = links | append: '<a href="' | append: page.slidesurl | append: '">Download Slides</a>' %}
+        {% endif %}
+        {% if page.websiteurl %}
+          {% if links != "" %}{% assign links = links | append: ' | ' %}{% endif %}
+          {% assign links = links | append: '<a href="' | append: page.websiteurl | append: '">Evaluation Website</a>' %}
+        {% endif %}
+
+        {% if links != "" %}
+          <p style="font-size: smaller">{{ links }}</p>
         {% endif %}
         
         {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
