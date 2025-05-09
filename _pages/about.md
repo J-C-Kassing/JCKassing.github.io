@@ -19,4 +19,6 @@ The power of AProVE is demonstrated in the [annual International Competition of 
 AProVE also won two Kurt Gödel medals at VSL 2014. 
 
 **UnRAVeL**:
-The focus of the interdisciplinary Research Training Group UnRAVeL is to significantly advance probabilistic modelling and analysis for uncertainty by developing new theories, algorithms, and tool-supported verification techniques, and to apply them to core problems of security, planning, and safety and performance analysis. To tackle these research challenges, theoretical computer scientists from computer-aided verification, logic and games, algorithms and complexity, together with experts from management science, and railway engineering form the core of this Research Training Group. 
+UnRAVeL (UNcertainty and Randomness in Algorithms, VErification and Logic) is an interdisciplinary Research Training Group funded by the German Research Foundation (DFG). 
+The goal is to significantly advance probabilistic modelling and analysis for uncertainty by developing new theories, algorithms, and tool-supported verification techniques, and to apply them to core problems of security, planning, and safety and performance analysis. 
+To tackle these research challenges, theoretical computer scientists from computer-aided verification, logic and games, algorithms and complexity, together with experts from management science, and railway engineering form the core of this Research Training Group. 
