@@ -85,6 +85,8 @@ publication_category:
     title: 'Conference Papers'
   preprint:
     title: 'Preprints'
+  extendedAbs:
+    title: 'Extended Abstracts'
 
 teaching_category:
   thesis:

@@ -58,6 +58,8 @@
             In <i>{{ post.venue }}</i>, {{ post.place }}, {{ post.bookdata }}, {{ post.year | default: ""}}.
         {% elsif post.category == 'preprint' %}
             {{ post.year | default: ""}}.
+        {% elsif post.category == 'extendedAbs' %}
+            {{ post.year | default: ""}}.
         {% endif %}
     {% endif %}
 
