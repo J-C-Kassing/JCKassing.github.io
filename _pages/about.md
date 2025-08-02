@@ -10,17 +10,29 @@ redirect_from:
 I have been a research assistant and PhD student in the [Research Group “Pro­gram­ming Languages and Verification”](https://verify.rwth-aachen.de/index_e.html) headed by Professor Jürgen Giesl since October 2022 and one of the main developers of the [Automated Program Verification Environment (AProVE)](https://aprove.informatik.rwth-aachen.de/) tool. Moreover, I am part of the interdisciplinary Research Training Group [UnRAVeL](https://www.unravel.rwth-aachen.de/cms/~ofgh/unravel/lidx/1/).
 
 **Personal Research**:
-My research focuses on theoretical computer science. I’m interested in automated reasoning and verification of (probabilistic) programs. In particular, I work on fully automated termination and complexity analysis of functional programs dealing with data structures. For this, I focus on analyzing termination and (expected) complexity of (probabilistic) term rewriting, which is a very basic functional programming language.
-
+My research focuses on theoretical computer science. I’m interested in automated reasoning and verification of (probabilistic) programs. 
+In particular, my PhD-topic is on fully automated termination and complexity analysis of functional programs dealing with data structures. For this, I focus on analyzing termination and (expected) complexity of (probabilistic) term rewriting, which is a very basic functional programming language.
 ![TRS.png](../images/TRS.png)
-
 All my contributions are implemented in the [Automated Program Verification Environment (AProVE)](https://aprove.informatik.rwth-aachen.de/) Tool.
+
+Apart from that, I am interested in:
+<ul style="margin-top: 0; margin-bottom: 0; padding-left: 20px; line-height: 1.2;">
+  <li>Program Analysis, Probabilistic Programs, Verification (of Probabilistic Systems), Rewriting, Automated Deduction, ... </li>
+  <li>SAT and SMT-Solving</li>
+  <li>Foundations of Mathematics and Computer Science: Logic, Set Theory, Proof Theory, ...</li>
+</ul>
+
+<br>
 
 **AProVE**:
 AProVE is a system for automated termination and complexity proofs of term rewrite systems (TRSs) and several variations of TRSs. 
 Moreover, AProVE also handles several other formalisms, e.g., imperative programs (Java Bytecode and C / LLVM), functional programs (Haskell 98), and logic programs (Prolog). 
 The power of AProVE is demonstrated in the [annual International Competition of Termination Tools](https://termination-portal.org/wiki/Termination_Competition) and the [International Competition](https://sv-comp.sosy-lab.org/) on Software Verification. 
 AProVE also won two Kurt Gödel medals at VSL 2014. 
+
+![AProVE.png](../images/open_source_aprove.png)
+
+<br>
 
 **UnRAVeL**:
 UnRAVeL (UNcertainty and Randomness in Algorithms, VErification and Logic) is an interdisciplinary Research Training Group funded by the German Research Foundation (DFG). 
