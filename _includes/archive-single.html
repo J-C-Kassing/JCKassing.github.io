@@ -29,45 +29,45 @@
     {% if post.collection == 'teaching' %}
         <b>{{ title }}</b>
     {% elsif post.collection == 'publications' %}
-        <h2 class="archive__item-title" itemprop="headline">
+        <h3 class="archive__item-title" itemprop="headline">
         {% if post.link %}
             <a href="{{ post.link }}">{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
         {% elsif post.permalink %}
             <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
         {% endif %}
-        </h2>
+        </h3>
     {% endif %}
     
     {% if post.read_time %}
       <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
     {% endif %}
 
+    {% assign content = "" %}
+
     {% if post.author %}
-      by {{ post.author }}.
+      {% assign content = content | append: 'by ' | append: post.author | append: '. ' %}
     {% endif %}
 
     {% if post.collection == 'teaching' %}
-        {% if post.award %}
-          {{ post.award }}
-        {% endif %}
-        <br><i>{{ post.venue }}</i>, {{ post.year | default: ""}}.
+      {% if post.award %}
+        {% assign content = content | append: post.award | append: ' ' %}
+      {% endif %}
+      {% assign content = content | append: '<br><i>' | append: post.venue | append: '</i>, ' | append: post.year | append: '.' %}
+
     {% elsif post.collection == 'publications' %}
-        {% if post.category == 'journal' %}
-            Published in <i>{{ post.venue }}</i>, {{ post.place }}, {{ post.bookdata }}, {{ post.year | default: ""}}.
-        {% elsif post.category == 'conferences' %}
-            In <i>{{ post.venue }}</i>, {{ post.place }}, {{ post.bookdata }}, {{ post.year | default: ""}}.
-        {% elsif post.category == 'preprint' %}
-            {{ post.year | default: ""}}.
-        {% elsif post.category == 'extendedAbs' %}
-            {{ post.year | default: ""}}.
-        {% endif %}
+      {% if post.category == 'journal' %}
+        {% assign content = content | append: 'Published in <i>' | append: post.venue | append: '</i>, ' | append: post.place | append: ', ' | append: post.bookdata | append: ', ' | append: post.year | append: '.' %}
+      {% elsif post.category == 'conferences' %}
+        {% assign content = content | append: 'In <i>' | append: post.venue | append: '</i>, ' | append: post.place | append: ', ' | append: post.bookdata | append: ', ' | append: post.year | append: '.' %}
+      {% elsif post.category == 'preprint' %}
+        {% assign content = content | append: post.year | append: '.' %}
+      {% elsif post.category == 'extendedAbs' %}
+        {% assign content = content | append: post.year | append: '.' %}
+      {% endif %}
     {% endif %}
 
-    {% if post.excerpt and site.read_more != 'enabled' %}
-    <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
-    {% elsif post.excerpt and site.read_more == 'enabled' %}
-    <p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
-    {% endif %}
+    <p class="archive__item-content">{{ content }}</p>
+
     
     {% if post.citation %}
       <p>Recommended citation: {{ post.citation }}<br /></p>
@@ -91,7 +91,13 @@
     {% endif %}
 
     {% if links != "" %}
-      <p style="font-size: smaller">{{ links }}</p>
+      <p class="archive__item-links">{{ links }}</p>
+    {% endif %}
+
+    {% if post.excerpt and site.read_more != 'enabled' %}
+    <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
+    {% elsif post.excerpt and site.read_more == 'enabled' %}
+    <p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
     {% endif %}
 
   </article>
