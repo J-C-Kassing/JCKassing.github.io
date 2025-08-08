@@ -5,4 +5,5 @@ collection: teaching
 category: thesis
 venue: "RWTH Aachen"
 year: "Winter, 2024/2025"
+correspondingPaper: '/publication/2025-09'
 ---

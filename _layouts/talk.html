@@ -51,8 +51,6 @@ layout: default
         {{ content }}
         {% if page.slidesurl %}<div><a href="{{ page.slidesurl }}" class="btn">{{ site.data.ui-text[site.locale].download_slides | default: "Download Slides" }}</a></div>{% endif %}
       </section>
-
-      {% include post_pagination.html %}
     </div>
 
     {% if site.comments.provider and page.comments %}
