@@ -3,5 +3,7 @@ title: "Satisfiability Checking"
 collection: teaching
 category: seminar
 venue: "RWTH Aachen"
-year: "Summer, 2025"
+type: "Seminar"
+year: '2025'
+excerpt: ''
 ---

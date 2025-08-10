@@ -28,6 +28,9 @@
 
     {% if post.collection == 'teaching' %}
         <b>{{ title }}</b>
+        {% if post.award %}
+          {{ post.award }}
+        {% endif %}
     {% elsif post.collection == 'publications' %}
         <h3 class="archive__item-title" itemprop="headline">
         {% if post.link %}
@@ -37,10 +40,6 @@
         {% endif %}
         </h3>
     {% endif %}
-    
-    {% if post.read_time %}
-      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
-    {% endif %}
 
     {% assign content = "" %}
 
@@ -49,10 +48,13 @@
     {% endif %}
 
     {% if post.collection == 'teaching' %}
-      {% if post.award %}
-        {% assign content = content | append: post.award | append: ' ' %}
+      {% if post.short-description %}
+        {% assign content = content | append: post.short-description %}
       {% endif %}
-      {% assign content = content | append: '<i>' | append: post.venue | append: '</i>, ' | append: post.year | append: '.' %}
+      {% if post.more %}
+        {% assign content = content | append: ' <a href="' | append: post.more | append: '">Read more..</a><br>' %}
+      {% endif %}
+      {% assign content = content | append: '<i>' | append: post.venue | append: '</i>, ' | append: post.year | append: '. ' %}
 
     {% elsif post.collection == 'publications' %}
       {% if post.category == 'journal' %}
