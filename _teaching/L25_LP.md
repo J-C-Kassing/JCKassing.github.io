@@ -4,7 +4,7 @@ collection: teaching
 category: lecture
 venue: "RWTH Aachen"
 type: "Lecture"
-year: '2025'
+year: '2022 (Student Assistant), 2025'
 short-description: 'Apart from a short introduction to the programming language Prolog this course is concerned with the basics of logic programming, programming techniques and implementations of logic programming languages.'
 excerpt: ''
 more: '/teaching/L25_LP'
