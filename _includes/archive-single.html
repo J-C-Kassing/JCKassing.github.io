@@ -64,7 +64,7 @@
       {% elsif post.category == 'preprint' %}
         {% assign content = content | append: post.year | append: '.' %}
       {% elsif post.category == 'extendedAbs' %}
-        {% assign content = content | append: post.year | append: '.' %}
+        {% assign content = content | append: 'In <i>' | append: post.venue | append: '</i>, ' | append: post.place | append: ', ' | append: post.bookdata | append: ', ' | append: post.year | append: '.' %}
       {% endif %}
     {% endif %}
 
