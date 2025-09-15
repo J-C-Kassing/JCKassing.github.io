@@ -237,6 +237,9 @@ collections:
   orga:
     output: true
     permalink: /:collection/:path/
+  review:
+    output: true
+    permalink: /:collection/:path/
 
 
 # These settings control how pages and collections are included in the site
@@ -291,6 +294,14 @@ defaults:
       type: orga
     values:
       layout: orga
+      author_profile: true
+      share: true
+  # _review
+  - scope:
+      path: ""
+      type: review
+    values:
+      layout: review
       author_profile: true
       share: true
 
