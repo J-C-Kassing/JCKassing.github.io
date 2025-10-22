@@ -36,6 +36,21 @@
   }
 }
 
+/* Hide the full title on smaller screens */
+.site-title--full {
+  display: none;
+}
+
+/* When viewport is $x-large or bigger, show full title and hide short one */
+@include breakpoint($x-large) {
+  .site-title--full {
+    display: inline;
+  }
+  .site-title--short {
+    display: none;
+  }
+}
+
 .masthead__menu {
 
   ul {
@@ -55,4 +70,8 @@
     padding-right: 2em;
     font-weight: 700;
   }
+}
+
+.hidden-links:not(.hidden) a {
+  color: #222;
 }

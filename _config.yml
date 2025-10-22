@@ -9,6 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 title                    : "Jan-Christoph Kassing"
+title_short              : "Kassing"
 title_separator          : "-"
 name                     : &name "Jan-Christoph Kassing"
 description              : &description "Theoretical Computer Scientist"
