@@ -34,9 +34,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
     btn.addEventListener('mouseleave', () => {
       if (avatar.tagName.toLowerCase() === 'img') {
-        avatar.src = '/images/Kassing_close.jpg'; // default avatar
+        avatar.src = '/images/Kassing_close.png'; // default avatar
       } else {
-        avatar.style.backgroundImage = `url('/images/Kassing_close.jpg')`;
+        avatar.style.backgroundImage = `url('/images/Kassing_close.png')`;
       }
     });
   });
