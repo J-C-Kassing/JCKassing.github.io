@@ -22,7 +22,7 @@ repository               : "J-C-Kassing/JCKassing.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "Kassing_close.jpg"
+  avatar           : "Kassing_close.png"
   name             : "Jan-Christoph Kassing"
   pronouns         : # "he/his"  
   bio              : "(Probabilistic) Program Verification, Rewriting, Termination"

@@ -6,12 +6,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // Define hover images in order of your nav buttons
   const hoverImages = [
-    '/images/Kassing_close 2.jpg',  // btn-1
-    '/images/Kassing_close 2.jpg',  // btn-2
+    '/images/Kassing_close.png',  // btn-1
+    '/images/Kassing_close.png',  // btn-2
     '/images/Kassing_paper.png',    // btn-3
     '/images/Kassing_talk.png',  // btn-4
     '/images/Kassing_teaching.png', // btn-5
-    '/images/Kassing_close 2.jpg',  // btn-6
+    '/images/Kassing_close.png',  // btn-6
   ];
 
   // Preload all hover images
