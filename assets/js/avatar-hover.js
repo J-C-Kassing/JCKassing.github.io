@@ -25,19 +25,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
   navItems.forEach((btn, index) => {
     btn.addEventListener('mouseenter', () => {
-      if (avatar.tagName.toLowerCase() === 'img') {
-        avatar.src = hoverImages[index];
-      } else {
-        avatar.style.backgroundImage = `url('${hoverImages[index]}')`;
-      }
+      avatar.style.backgroundImage = `url('${hoverImages[index]}')`;
     });
 
     btn.addEventListener('mouseleave', () => {
-      if (avatar.tagName.toLowerCase() === 'img') {
-        avatar.src = '/images/Kassing_close.png'; // default avatar
-      } else {
-        avatar.style.backgroundImage = `url('/images/Kassing_close.png')`;
-      }
+      avatar.style.backgroundImage = `url('/images/Kassing_close.png')`;
     });
   });
 });

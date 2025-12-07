@@ -76,12 +76,10 @@
    Author profile and links
    ========================================================================== */
 
+/* Avatar container */
 .author__avatar {
   display: table-cell;
   vertical-align: top;
-  width: 36px;
-  // set width only, for non-square avatars
-  // height: 36px;
 
   @include breakpoint($large) {
     display: block;
@@ -89,8 +87,8 @@
     height: auto;
   }
 
-  img {
-    max-width: 175px;
+  div {
+    max-width: 200px;
     border-radius: 50%;
 
     @include breakpoint($large) {
@@ -99,6 +97,33 @@
     }
   }
 }
+
+/* Avatar image */
+#user-avatar {
+  width: 0px;     /* Default: hidden (mobile) */
+  height: 0px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.3s ease;
+
+  /* Large screens → 120px */
+  @include breakpoint($large) {
+    padding: 5px;
+    border: 1px solid $border-color;
+    width: 120px;
+    height: 120px;
+  }
+
+  /* X-Large screens → 200px */
+  @include breakpoint($x-large) {
+    padding: 5px;
+    border: 1px solid $border-color;
+    width: 200px;
+    height: 200px;
+  }
+}
+
 
 .author__content {
   display: table-cell;

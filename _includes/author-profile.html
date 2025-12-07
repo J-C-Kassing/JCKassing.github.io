@@ -8,11 +8,20 @@
 
   <div class="author__avatar">
     {% if author.avatar contains "://" %}
-    	<img id="user-avatar" src="{{ author.avatar }}" alt="{{ author.name }}">
+      <div id="user-avatar" 
+          class="author__avatar" 
+          style="background-image: url('{{ author.avatar }}');"
+          aria-label="{{ author.name }}">
+      </div>
     {% else %}
-    	<img id="user-avatar" src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" class="author__avatar" alt="{{ author.name }}">
+      <div id="user-avatar" 
+          class="author__avatar" 
+          style="background-image: url('{{ author.avatar | prepend: '/images/' | prepend: base_path }}');"
+          aria-label="{{ author.name }}">
+      </div>
     {% endif %}
   </div>
+
 
   <div class="author__content">
     <h3 class="author__name">{{ author.name }}</h3>
