@@ -1,5 +1,5 @@
 ---
-title: "Programming"
+title: "Programming Concepts"
 collection: teaching
 category: lecture
 venue: "RWTH Aachen"

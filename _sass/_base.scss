@@ -313,3 +313,30 @@ b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a,
   -webkit-transition: $global-transition;
   transition: $global-transition;
 }
+
+
+.highlight-text {
+  color: $blue-grad-start; // SCSS variable compiles to a real color
+}
+
+.modern-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.modern-list .list__item {
+  background-color: #ffffff;
+  border-radius: none;
+  box-shadow: none;
+  transition: none;
+}
+
+#user-image {
+  transition: 0.3s ease;
+}
+
+/* Hover over About button */
+.nav-about:hover ~ #user-image {
+  content: url('/assets/images/profile-about.jpg');
+}

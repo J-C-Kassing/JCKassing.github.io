@@ -72,6 +72,21 @@
   }
 }
 
+.masthead__menu-item.btn-1:hover ~ .avatar {
+  background-image: url('/images/Kassing_close\ 2.jpg');
+  color: aqua;
+}
+
+.masthead__menu-item.btn-2:hover ~ .avatar {
+  background-image: url('/images/Kassing_no_back.png');
+  color: aqua;
+}
+
+.masthead__menu-item.btn-3:hover ~ .avatar {
+  background-image: url('/images/editing-talk.png');
+  color: aqua;
+}
+
 .hidden-links:not(.hidden) a {
   color: #222;
 }

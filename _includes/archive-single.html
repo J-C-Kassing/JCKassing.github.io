@@ -29,7 +29,7 @@
     {% if post.collection == 'teaching' %}
         <b>{{ title }}</b>
         {% if post.award %}
-          {{ post.award }}
+          <span class="highlight-text">{{ post.award }}</span>
         {% endif %}
     {% elsif post.collection == 'publications' %}
         <h3 class="archive__item-title" itemprop="headline">
@@ -54,11 +54,11 @@
       {% if post.more %}
         {% assign content = content | append: ' <a href="' | append: post.more | append: '">Read more..</a><br>' %}
       {% endif %}
-      {% assign content = content | append: '<i>' | append: post.venue | append: '</i>, ' | append: post.year | append: '. ' %}
+      {% assign content = content | append: post.venue | append: ', ' | append: post.year | append: '. ' %}
 
     {% elsif post.collection == 'publications' %}
       {% if post.category == 'journal' %}
-        {% assign content = content | append: 'Published in <i>' | append: post.venue | append: '</i>, ' | append: post.place | append: ', ' | append: post.bookdata | append: ', ' | append: post.year | append: '.' %}
+        {% assign content = content | append: 'Published in <i>' | append: post.venue | append: '</i>, ' | append: post.bookdata | append: ', ' | append: post.year | append: '.' %}
       {% elsif post.category == 'conferences' %}
         {% assign content = content | append: 'In <i>' | append: post.venue | append: '</i>, ' | append: post.place | append: ', ' | append: post.bookdata | append: ', ' | append: post.year | append: '.' %}
       {% elsif post.category == 'preprint' %}
