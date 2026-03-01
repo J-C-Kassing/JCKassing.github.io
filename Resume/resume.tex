@@ -1,0 +1,282 @@
+%-------------------------
+% Resume in LateX
+% Author : Jan-Christoph Kassing
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color, xcolor}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{graphicx}
+\usepackage{randtext}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % Clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate PDF is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      {\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheadingSix}[6]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      {\small#3} & \textit{\small #4} \\
+      {\small#5} & \textit{\small #6} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      {\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://jckassing.com/}{\Large Jan-Christoph Kassing}} & Email: \randomize{Kassing@cs.rwth-aachen.de}\\
+  \href{https://jckassing.com/}{jckassing.com} & \href{https://scholar.google.com/citations?user=fjs2eB0AAAAJ&hl=de&oi=ao}{Google Scholar (Link)}\\
+  & \href{https://dblp.org/pid/347/9486.html}{DBLP (Link)}\\
+\end{tabular*}
+
+
+%-----------RESEARCH EXPERIENCE-----------------
+\section{\textcolor{ForestGreen}{Research Experience}}
+  \resumeSubHeadingListStart
+  \resumeSubheading
+      {\href{https://www.rwth-aachen.de/}{RWTH Aachen University} \includegraphics[width=1.2cm]{RWTH.png}}{Aachen, Germany}
+      {PhD Student: Research and Teaching Assistant}{Oct 2022 -- Present}
+      \resumeItemListStart
+          \resumeItem{Research -- Probabilistic Program Verification}
+          {My PhD focuses on developing automated methods to analyze termination and expected runtime of probabilistic programs dealing with arbitrary data structures via probabilistic term rewrite systems.}
+          \resumeItem{Teaching -- Programming Languages and Verification}
+          {Nominated for the student-voted teaching award for outstanding teaching assistants. Responsibilities included designing exercises, leading sessions, and assisting lectures.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {\href{https://www.rwth-aachen.de/}{RWTH Aachen University} \includegraphics[width=1.2cm]{RWTH.png}}{Aachen, Germany}
+      {Student Assistant}{Oct 2018 -- Sep 2022}
+          \resumeItemListStart
+          \resumeItem{Assisted in Teaching and Research}
+          {Research focussing on automated methods to analyze integer term rewrite systems, a formalism to express programs containing ordinary integer and arbitrary data structures, e.g., see \href{https://verify.rwth-aachen.de/giesl/papers/idp-distribute.pdf}{here}.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EDUCATION-----------------
+\section{\textcolor{ForestGreen}{Education}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {PhD Student in Computer Science}{Aachen, Germany}
+      {RWTH Aachen University}{Oct 2022 -- Expected 2026}
+
+      Thesis: ``\textit{}'' (ongoing)
+    \resumeSubheading
+      {Master of Science in Computer Science}{Aachen, Germany}
+      {RWTH Aachen University; Grade: 1.2 (with distinction)}{Oct 2020 -- Oct 2022}
+      
+      Thesis: ``\href{https://jckassing.com/files/MA_Kassing.pdf}{\textit{Using Dependency Pairs for Proving Almost-Sure Termination of Probabilistic Term Rewriting}}''
+    \resumeSubheading
+      {Bachelor of Science in Computer Science}{Aachen, Germany}
+      {RWTH Aachen University; Grade: 1.4}{Oct 2017 -- Oct 2020}
+
+      Thesis: ``\href{https://jckassing.com/files/BA_Kassing.pdf}{\textit{The Recursive Algorithm for Parity Games}}''
+    \resumeSubheading
+      {Abitur (High School Graduation)}{Soest, Germany}
+      {Aldegrever Gymnasium; Grade: 1.7}{Oct 2009 -- Oct 2017}
+  \resumeSubHeadingListEnd
+
+%-----------HONORS AND AWARDS-----------------
+\section{\textcolor{ForestGreen}{Honors \& Rewards}}
+  \resumeSubHeadingListStart
+    \item \textbf{Teaching Assistant for B. Sc. Courses (Approx.\ 800 participants)} \hfill \textbf{Years}
+    \begin{enumerate}
+      \item Programming Concepts (\textcolor{BrickRed}{Nominated for teaching award}) \hfill (\textit{2022, 2023, 2024, 2025})
+    \end{enumerate}
+    \item \textbf{Teaching Assistant for M. Sc. Courses (Approx.\ 300 participants)} \hfill \textbf{Years}
+    \begin{enumerate}
+      \item Foundations of Functional Programming (\textcolor{BrickRed}{Nominated for teaching award}) \hfill (\textit{2024, 2026})
+      \item Foundations of Logic Programming \hfill (\textit{2025})
+    \end{enumerate}
+    \item \textbf{Seminar Supervision (Supervised 1-30 students per seminar)} \hfill \textbf{Years}
+    \begin{enumerate}
+      \item Advanced Programming Concepts \hfill (\textit{2023, 2024, 2025, 2026})
+      \item Satisfiability Checking \hfill (\textit{2025, 2026})
+      \item Verification Techniques \hfill (\textit{2022, 2023, 2024, 2025})
+    \end{enumerate}
+    \item \textbf{Student Assistant (During B.\ Sc.\ and M.\ Sc.\ )} \hfill \textbf{Years}
+    \begin{enumerate}
+      \item Programming Concepts \hfill (\textit{2018, 2019})
+      \item Complexity Theory \hfill (\textit{2021})
+      \item Data Structures and Algorithms \hfill (\textit{2019})
+      \item Formal Systems, Automata and Processes \hfill (\textit{2018})
+      \item Mathematical Logic \hfill (\textit{2021})
+    \end{enumerate}
+  \resumeSubHeadingListEnd
+
+%-----------Teaching Experience-----------------
+\section{\textcolor{ForestGreen}{Teaching Experience}}
+  \resumeSubHeadingListStart
+  \resumeSubheading
+      {PhD Student in Computer Science}{Aachen, Germany}
+      {RWTH Aachen University}{Oct 2022 -- Expected 2026}
+  \resumeSubHeadingListEnd
+
+%-----------Student Supervision-----------------
+\section{\textcolor{ForestGreen}{Student Supervision}}
+  \resumeSubHeadingListStart
+  \item \textbf{M. Sc. Thesis Supervisor}
+    \begin{enumerate}
+      \item Leon Spitzer: ``\textit{Analyzing Strong Almost-Sure Termination for Probabilistic Term Rewriting Using Dependency Pairs}'' \href{https://jckassing.com/publication/2025-09-01}{(\textcolor{BrickRed}{related published paper})}
+      \item Jiaqian Chen: ``\textit{Integration of New State-of-the-art SMT-Solvers into the Termination Tool AProVE}''
+    \end{enumerate}
+
+  \item \textbf{B. Sc. Thesis Supervisor}
+    \begin{enumerate}
+      \item Kiran Monteiro Pai: ``\textit{Reachability Analysis for Probabilistic Term Rewriting Systems}'' (\textcolor{BrickRed}{related paper ongoing})
+      \item Tobias Sokolowski: ``\textit{Proving Confluence of Term Rewriting within AProVE}''
+      \item Arion Scheid: ``\textit{Using Stochastic Context Free Grammars to decide Almost Sure Termination for Probabilistic Term Rewriting Systems}'' (\textcolor{BrickRed}{related paper ongoing})
+      \item Ivan Zlatin: ``\textit{Analyzing Derivational Complexity via Innermost Derivational Complexity}''
+      \item Alexander Schlecht: ``\textit{Counting the Probabilities of Loops: Disproving (Strong) Almost-Sure Termination of Probabilistic Rewriting Automatically}'' (\href{https://arxiv.org/abs/2602.16522}{\textcolor{BrickRed}{related paper in review}})
+      \item Henri Nagel: ``\textit{Refining the Dependency Framework for Basic Start Terms}''
+      \item David Weber: ``\textit{PReVision - A Visualization Tool for Computations of Probabilistic Term Rewriting}''
+      \item Fabian Berkner: ``\textit{Defining H-Termination for the Analysis of Haskell Programs}''
+      \item Jonas Säuberlich: ``\textit{Integration of Advanced Interpretation Techniques for Termination Analysis of (Probabilistic) Term Rewriting}''
+      \item Grigory Vartanyan: ``\textit{Using Dependency Tuples for Proving Relative Termination of Term Rewriting}'' \href{https://jckassing.com/publication/2024-07}{(\textcolor{BrickRed}{related published paper})}
+    \end{enumerate}
+  \resumeSubHeadingListEnd
+
+%-----------Presentations-----------------
+\section{\textcolor{ForestGreen}{Presentations}}
+  \resumeSubHeadingListStart
+  \resumeSubheading
+      {PhD Student in Computer Science}{Aachen, Germany}
+      {RWTH Aachen University}{Oct 2022 -- Expected 2026}
+  \resumeSubHeadingListEnd
+
+%-----------MANAGEMENT AND LEADERSHIP EXPERIENCE-----------------
+\section{\textcolor{ForestGreen}{Management \& Leadership Experience}}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+        {\href{https://app-stone.org/}{App-Stone GmbH} \includegraphics[width=0.3cm]{stone.png}}{Soest, Germany}
+        {Founder \& Shareholder}{Mai 2018 -- Oct 2025}
+        \resumeItemListStart
+            \resumeItem{Foundation}
+            {Co-founded Capybara Software UG in 2018 and App-Stone GmbH after two years of growth. Both companies specialize in on-demand iOS and Android app development.}
+            \resumeItem{Management \& Leadership}
+            {Managed a team of up to 10 employees across various departments. Handled business decisions, hiring, project management, planning, and drafting project proposals with price calculations.}
+        \resumeItemListEnd
+        \resumeSubSubheading
+            {Software Engineer}{Mai 2018 -- Oct 2025}
+            \resumeItemListStart
+            \resumeItem{Android Development}
+            {Mobile apps in Android Studio (Java)}
+            \resumeItem{iOS Development}
+            {Mobile apps in Xcode (Swift)}
+            \resumeItem{Hybrid Mobile Development}
+            {Multi-platform apps with Flutter (Dart)}
+            \resumeItem{Server Development}
+            {Backends with Django. Dockerized with Postgres, Gunicorn, Nginx. Deployed on AWS}
+            \resumeItem{Testing \& Debugging}
+            {JUnit testing, error analysis with Firebase Crashlytics}
+            \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{\textcolor{ForestGreen}{Project Highlights}}
+  \resumeSubHeadingListStart
+    \resumeSubItem{\href{https://aprove.informatik.rwth-aachen.de/}{AProVE}}
+      {AProVE (Automated Program Verification Environment Web Interface) is a tool for automatically proving termination, runtime complexity, safety, etc. of several programming languages like Java, C, or Haskell.}
+    \resumeSubItem{\href{https://app-partner.com/}{BWL Champion}}
+      {BWL Champion is an app that allows users to test and expand their business knowledge digitally at any time via Quizzes and can even be played competitively.}
+    \resumeSubItem{\href{https://www.africamultiple.uni-bayreuth.de/en/AABC/English-Version/index.html}{AABC}}
+      {African Alphabets of the Bayreuth Cluster (AABC) provides mobiles and desktop PCs (Windows and iOS) with keyboards for all common African languages and scripts.}
+    \resumeSubItem{\href{https://de.amselapp.com/}{Amsel - Build up your voice}}
+      {Amsel is a mobile application for singers of every performance level. It provides many warm-up techniques and exercises to develop a more professional singing voice.}
+  \resumeSubHeadingListEnd
+
+%
+%--------SKILLS------------
+\section{\textcolor{ForestGreen}{Skills and Hobbies}}
+ 
+    \textbf{Prog.\ Languages}{: Java, Python, Dart}
+    \hfill
+    \textbf{Technologies}{: AWS, Docker, Git}\\
+    \smallskip
+    \textbf{Hobbies}{: Competitive (E-)Sports, e.g., playing Handball, playing E-Bass and learning piano}
+    \hfill
+
+%-------------------------------------------
+\end{document}
