@@ -57,10 +57,12 @@
       {% assign content = content | append: post.venue | append: ', ' | append: post.year | append: '. ' %}
 
     {% elsif post.collection == 'publications' %}
-      {% if post.category == 'journal' %}
-        {% assign content = content | append: 'Published in <i>' | append: post.venue | append: '</i>, ' | append: post.bookdata | append: ', ' | append: post.year | append: '.' %}
-      {% elsif post.category == 'conferences' %}
+      {% if post.category == 'conferences' %}
         {% assign content = content | append: 'In <i>' | append: post.venue | append: '</i>, ' | append: post.place | append: ', ' | append: post.bookdata | append: ', ' | append: post.year | append: '.' %}
+      {% elsif post.category == 'journal' %}
+        {% assign content = content | append: 'Published in <i>' | append: post.venue | append: '</i>, ' | append: post.bookdata | append: ', ' | append: post.year | append: '.' %}
+      {% elsif post.category == 'books' %}
+        {% assign content = content | append: 'Published in <i>' | append: post.venue | append: '</i>, ' | append: post.bookdata | append: ', ' | append: post.year | append: '.' %}
       {% elsif post.category == 'preprint' %}
         {% assign content = content | append: post.year | append: '.' %}
       {% elsif post.category == 'extendedAbs' %}
