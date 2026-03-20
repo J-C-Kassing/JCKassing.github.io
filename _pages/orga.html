@@ -1,26 +1,28 @@
 ---
 layout: archive
-title: "Community Service"
+title: "Activities"
 permalink: /orga/
 author_profile: true
 ---
 
-<br>
-
-I had the pleasure of organizing the following workshops with a wonderful team each time!
+<p>I had the pleasure of organizing the following workshops with a wonderful team each time!</p>
 
 {% for post in site.orga reversed %}
   {% include archive-single-orga.html %}
 {% endfor %}
 
 <br>
+
+<p>I had the honor of serving as a pc member for the following workshops and conferences.</p>
+
+{% for post in site.pc reversed %}
+  {% include archive-single-pc.html %}
+{% endfor %}
+
 <br>
 
-Additionally, I had the honor of serving as a reviewer for the following conferences and journals.
-<span class="highlight-text">I am always open to help in reviewing works related to my interests!</span>
-
-<br>
-<br>
+<p>Additionally, I had the honor of serving as a reviewer for the following conferences and journals.
+<span class="highlight-text">I am always open to help in reviewing works related to my interests!</span></p>
 
 {% for post in site.review reversed %}
   {% include archive-single-review.html %}
