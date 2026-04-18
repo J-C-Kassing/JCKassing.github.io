@@ -10,22 +10,34 @@ redirect_from:
 I have been a research assistant and PhD student in the [Research Group “Pro­gram­ming Languages and Verification”](https://verify.rwth-aachen.de/index_e.html) headed by Professor Jürgen Giesl since October 2022 and I am one of the main developers of the [Automated Program Verification Environment (AProVE)](https://aprove.informatik.rwth-aachen.de/) tool. Moreover, I am part of the interdisciplinary Research Training Group [UnRAVeL](https://www.unravel.rwth-aachen.de/cms/~ofgh/unravel/lidx/1/).
 
 **Personal Research**:
-My research focuses on theoretical computer science and I’m interested in all aspects of automated reasoning and verification of (probabilistic) programs.
-Due to the massive increase in automatically generated code, I am strongly convinced that formal verification will become indispensable in the future.
-In particular, my PhD-topic is on fully automated termination and complexity analysis of functional programs dealing with data structures. For this, I focus on analyzing termination and (expected) complexity of (probabilistic) term rewriting, which is a very basic functional programming language.
-The following is an example of a term rewriting system (TRS), which computes the addition of two natural numbers represented by the zero function 0 and the successor function s(...).
-![TRS.png](../images/TRS.png)
-The nice part of TRSs is that there exists automatized translations, e.g., from Java programs to TRSs, so that analyzing termination and complexity of TRSs directly leads to techniques for analyzing other programming languages like Java.
-All my contributions on (probabilistic) term rewriting and the previously mentioned translations are implemented in the [Automated Program Verification Environment (AProVE)](https://aprove.informatik.rwth-aachen.de/) Tool.
+My research is on theoretical computer science, with a particular focus on automated reasoning and the verification of probabilistic programs. In a world where code is increasingly generated automatically,
+e.g., through program synthesis, AI-assisted development, or template-based code generators,
+automatic formal verification is more pressing than ever. 
+I strongly believe that formal verification will remain an essential role in building reliable software systems in the future.
 
-In probabilistic programs, in addition to standard control structures like if-statements and recursion, there is the possibility to flip a coin. Depending on the result of the coin flip, the program can then proceed in different ways.
-Probabilistic programs are used to describe randomized algorithms and probability distributions, with applications in many areas, e.g., machine learning, to handle uncertainty in data or to create robust algorithms.
+In my PhD, I study fully automated termination and complexity analysis for functional programs that manipulate data structures. More specifically, I investigate the termination and expected complexity of probabilistic term rewriting systems, a simple yet Turing complete foundational model of computation.
 
-Apart from probabilistic term rewriting, I am generally interested in:
+An example of a term rewriting system for addition on natural numbers is shown below.
+<img src="../images/TRS.png" alt="Example of a term rewriting system for addition" style="max-width: 100%; height: auto; border-radius: 8px;">
+
+One particularly attractive aspect of term rewriting is that there are automated translations from practically relevant programming languages, such as Java, into rewriting formalisms. 
+<img src="../images/FrontendBackend.png" alt="Translation pipeline from programming languages to rewriting-based analysis" style="max-width: 100%; height: auto; border-radius: 8px;">
+This makes it possible to transfer powerful termination and complexity techniques from rewriting theory to the analysis of real-world programs.
+
+All my contributions on the analysis of probabilistic term rewriting are implemented in the [Automated Program Verification Environment (AProVE)](https://aprove.informatik.rwth-aachen.de/) tool.
+
+In probabilistic programs, standard control structures such as conditionals and recursion are enriched by random choices, for example by flipping a coin. These programs are a natural way to model randomized algorithms and probability distributions, with applications ranging from machine learning to robust decision-making under uncertainty.
+Incorporating probabilities into algorithms has several advantages in practice, 
+e.g., to decrease the expected runtime of an algorithm.
+For example, randomized quicksort achieves a lower expected number of comparisons 
+than any deterministic variant.
+
+Apart from (probabilistic) term rewriting, I am generally interested in:
 <ul style="margin-top: 0; margin-bottom: 0; padding-left: 20px; line-height: 1.2;">
-  <li>Program Analysis, Probabilistic Programs, Verification (of Probabilistic Systems), Rewriting, Automated Deduction, ... </li>
-  <li>Foundations of Mathematics and Computer Science: Logic, Set Theory, Proof Theory, ...</li>
+  <li>Program Analysis, Probabilistic Programs, Verification of (Probabilistic) Systems, Rewriting, Automated Deduction, ... </li>
+  <li><a href="https://ccanonne.github.io/survey-topics-dt.html">Distribution Testing</a></li>
   <li>SAT and SMT-Solving w.r.t. different theories</li>
+  <li>Foundations of Mathematics and Computer Science: Logic, Set Theory, Proof Theory, ...</li>
 </ul>
 
 <br>
