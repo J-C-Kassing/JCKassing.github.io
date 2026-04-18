@@ -18,6 +18,7 @@ I strongly believe that formal verification will remain an essential role in bui
 In my PhD, I study fully automated termination and complexity analysis for functional programs that manipulate data structures. More specifically, I investigate the termination and expected complexity of probabilistic term rewriting systems, a simple yet Turing complete foundational model of computation.
 
 An example of a term rewriting system for addition on natural numbers is shown below.
+Here, natural numbers are represented by the successor function s(...) and the zero function 0.
 <img src="../images/TRS.png" alt="Example of a term rewriting system for addition" style="max-width: 100%; height: auto; border-radius: 8px;">
 
 One particularly attractive aspect of term rewriting is that there are automated translations from practically relevant programming languages, such as Java, into rewriting formalisms. 
