@@ -5,4 +5,5 @@ collection: teaching
 category: thesis
 venue: "RWTH Aachen"
 year: "Summer, 2025"
+correspondingPaper: '/publication/2026-07'
 ---
