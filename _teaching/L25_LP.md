@@ -7,6 +7,7 @@ type: "Lecture"
 year: '2022 (Student Assistant), 2025'
 short-description: 'Apart from a short introduction to the programming language Prolog this course is concerned with the basics of logic programming, programming techniques and implementations of logic programming languages.'
 excerpt: ''
+award: '(Nominated for teaching award)'
 more: '/teaching/L25_LP'
 ---
 

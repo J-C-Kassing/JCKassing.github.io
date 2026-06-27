@@ -12,22 +12,42 @@ Writing a thesis at the research groupe for Programming Languages and Verificati
 <span class="highlight-text">Get in touch and write me a mail if you're interested!</span>
 
 <!-- New style rendering if teaching categories are defined -->
+<div class="archive-boxed">
 {% if site.teaching_category %}
+  {% assign current_group = "" %}
   {% for category in site.teaching_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.teaching reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
+    {% assign category_posts = site.teaching | where: "category", category[0] %}
+    {% if category_posts.size > 0 %}
+      {% assign group = category[1].group %}
+      {% if group %}
+        {% if group != current_group %}
+          <h2>{{ group }}</h2><hr />
+          {% assign current_group = group %}
+        {% endif %}
+        <h3>{{ category[1].title }}</h3>
+      {% else %}
+        {% assign current_group = "" %}
         <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
+      {% endif %}
+
+      {% if group %}
+        {% assign posts_by_year = category_posts | group_by_exp: "p", "p.year | split: ', ' | last | split: '/' | last" | sort: "name" | reverse %}
+        {% for year_group in posts_by_year %}
+          <h4 class="year-heading">{{ year_group.name }}</h4>
+          {% for post in year_group.items %}
+            {% include archive-single.html %}
+          {% endfor %}
+        {% endfor %}
+      {% else %}
+        {% for post in category_posts reversed %}
+          {% include archive-single.html %}
+        {% endfor %}
+      {% endif %}
+    {% endif %}
   {% endfor %}
 {% else %}
   {% for post in site.teaching reversed %}
     {% include archive-single.html %}
   {% endfor %}
 {% endif %}
+</div>

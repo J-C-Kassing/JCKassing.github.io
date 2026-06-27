@@ -173,6 +173,71 @@
 
 
 /*
+   Boxed list view (publications, talks, teaching)
+   ========================================================================== */
+
+.archive-boxed {
+
+  .list__item {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 0.85rem;
+    padding: 0.7rem 1.2rem 0.8rem calc(1.2rem + 4px);
+    background: #fff;
+    border: 1px solid mix(#fff, $gray, 78%);
+    border-radius: 10px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 4px;
+      background: linear-gradient(180deg, $blue-grad-start, $blue-grad-end);
+    }
+  }
+
+  .archive__item > *:first-child {
+    margin-top: 0;
+  }
+
+  .archive__item > *:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Larger, easier-to-read body text inside the boxes */
+  .archive__item-content {
+    font-size: $type-size-5;
+  }
+
+  .archive__item-excerpt {
+    font-size: $type-size-5;
+  }
+
+  .archive__item-links {
+    font-size: $type-size-55;
+  }
+
+  /* Small per-year sub-headers */
+  .year-heading {
+    margin: 1.6em 0 0.7em;
+    padding-bottom: 0.25em;
+    font-family: $sans-serif-narrow;
+    font-size: $type-size-5;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    color: $blue-grad-start;
+    border-bottom: 1px solid mix($blue-grad-end, #fff, 22%);
+
+    &:first-child {
+      margin-top: 0.3em;
+    }
+  }
+}
+
+
+/*
    Grid view
    ========================================================================== */
 

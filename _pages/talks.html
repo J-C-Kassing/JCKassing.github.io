@@ -5,6 +5,13 @@ permalink: /talks/
 author_profile: true
 ---
 
-{% for post in site.talks reversed %}
-  {% include archive-single-talk.html %}
+<div class="archive-boxed">
+{% assign talks_by_year = site.talks | group_by_exp: "t", "t.date | date: '%Y'" | sort: "name" | reverse %}
+{% for year_group in talks_by_year %}
+  <h2 class="year-heading">{{ year_group.name }}</h2>
+  {% assign year_talks = year_group.items | sort: "date" | reverse %}
+  {% for post in year_talks %}
+    {% include archive-single-talk.html %}
+  {% endfor %}
 {% endfor %}
+</div>

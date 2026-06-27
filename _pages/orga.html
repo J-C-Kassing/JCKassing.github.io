@@ -5,25 +5,52 @@ permalink: /orga/
 author_profile: true
 ---
 
-<p>I had the pleasure of organizing the following workshops with a wonderful team each time!</p>
+{% include base_path %}
 
-{% for post in site.orga reversed %}
-  {% include archive-single-orga.html %}
-{% endfor %}
+<section class="activity-section">
+  <header class="activity-section__header">
+    <span class="activity-section__icon"><i class="fas fa-users" aria-hidden="true"></i></span>
+    <div>
+      <h2 class="activity-section__title">Workshop Organization</h2>
+      <p class="activity-section__subtitle">I had the pleasure of organizing the following workshops with a wonderful team each time!</p>
+    </div>
+  </header>
 
-<br>
+  <div class="activity-cards">
+    {% for post in site.orga reversed %}
+      {% include archive-single-orga.html %}
+    {% endfor %}
+  </div>
+</section>
 
-<p>I had the honor of serving as a pc member for the following workshops and conferences.</p>
+<section class="activity-section">
+  <header class="activity-section__header">
+    <span class="activity-section__icon"><i class="fas fa-gavel" aria-hidden="true"></i></span>
+    <div>
+      <h2 class="activity-section__title">Program Committee Member</h2>
+      <p class="activity-section__subtitle">I had the honor of serving as a PC member for the following workshops and conferences.</p>
+    </div>
+  </header>
 
-{% for post in site.pc reversed %}
-  {% include archive-single-pc.html %}
-{% endfor %}
+  <div class="activity-grid">
+    {% for post in site.pc reversed %}
+      {% include archive-single-pc.html %}
+    {% endfor %}
+  </div>
+</section>
 
-<br>
+<section class="activity-section">
+  <header class="activity-section__header">
+    <span class="activity-section__icon"><i class="fas fa-pen-fancy" aria-hidden="true"></i></span>
+    <div>
+      <h2 class="activity-section__title">Reviewer</h2>
+      <p class="activity-section__subtitle">I had the honor of serving as a reviewer for the following conferences and journals. <span class="highlight-text">I am always open to help in reviewing works related to my interests!</span></p>
+    </div>
+  </header>
 
-<p>Additionally, I had the honor of serving as a reviewer for the following conferences and journals.
-<span class="highlight-text">I am always open to help in reviewing works related to my interests!</span></p>
-
-{% for post in site.review reversed %}
-  {% include archive-single-review.html %}
-{% endfor %}
+  <div class="activity-grid">
+    {% for post in site.review reversed %}
+      {% include archive-single-review.html %}
+    {% endfor %}
+  </div>
+</section>

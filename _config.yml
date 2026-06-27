@@ -90,8 +90,12 @@ publication_category:
     title: 'Extended Abstracts'
 
 teaching_category:
+  thesis_active:
+    title: 'Active'
+    group: 'Supervised Theses'
   thesis:
-    title: 'Supervised Theses'
+    title: 'Successfully Finished'
+    group: 'Supervised Theses'
   seminar:
     title: 'Seminars'    
   lecture:

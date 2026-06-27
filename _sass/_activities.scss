@@ -1,0 +1,186 @@
+/* ==========================================================================
+   Activities page
+   ========================================================================== */
+
+.activity-section {
+  margin-bottom: 3em;
+
+  &:last-child {
+    margin-bottom: 1em;
+  }
+}
+
+.activity-section__header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5em;
+}
+
+.activity-section__icon {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  color: #fff;
+  background: linear-gradient(135deg, $blue-grad-start 0%, $blue-grad-end 100%);
+  box-shadow: 0 4px 12px rgba($blue-grad-start, 0.35);
+}
+
+.activity-section__title {
+  margin: 0.1em 0 0.15em;
+  font-family: $sans-serif-narrow;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.activity-section__subtitle {
+  margin: 0;
+  color: mix(#fff, $text-color, 25%);
+  font-size: $type-size-5;
+}
+
+/* Organized workshops — rich cards */
+.activity-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+
+  @include breakpoint($medium) {
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  }
+}
+
+.activity-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid mix(#fff, $gray, 78%);
+  border-radius: 14px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.activity-card__bar {
+  height: 5px;
+  background: linear-gradient(90deg, $blue-grad-start 0%, $blue-grad-end 100%);
+}
+
+.activity-card__body {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  padding: 1.25rem 1.4rem 1.4rem;
+}
+
+.activity-card__title {
+  margin: 0 0 0.6rem;
+  font-family: $sans-serif-narrow;
+  font-weight: 700;
+  font-size: $type-size-4;
+  line-height: 1.25;
+  color: $text-color;
+}
+
+.activity-card__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.activity-card__meta-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: $type-size-55;
+  color: mix(#fff, $text-color, 20%);
+
+  i {
+    color: $blue-grad-end;
+  }
+}
+
+.activity-card__link {
+  margin-top: 1rem;
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.45rem 0.9rem;
+  font-size: $type-size-55;
+  font-weight: 600;
+  border-radius: 999px;
+  color: $blue-grad-start;
+  background: rgba($blue-grad-end, 0.1);
+  text-decoration: none;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+
+  i {
+    transition: transform 0.2s ease;
+  }
+
+  &:hover {
+    background: linear-gradient(135deg, $blue-grad-start, $blue-grad-end);
+    color: #fff;
+
+    i {
+      transform: translateX(3px);
+    }
+  }
+}
+
+/* PC + reviewer — compact pills */
+.activity-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.85rem;
+
+  @include breakpoint($medium) {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+
+.activity-pill {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid mix(#fff, $gray, 78%);
+  border-radius: 10px;
+}
+
+.activity-pill__accent {
+  flex: 0 0 4px;
+  background: linear-gradient(180deg, $blue-grad-start, $blue-grad-end);
+}
+
+.activity-pill__content {
+  padding: 0.8rem 1rem;
+}
+
+.activity-pill__title {
+  font-family: $sans-serif-narrow;
+  font-size: $type-size-5;
+  line-height: 1.35;
+  color: $text-color;
+  text-decoration: none;
+
+  i {
+    margin-left: 0.35rem;
+    font-size: 0.8em;
+    color: $blue-grad-end;
+    opacity: 0.7;
+  }
+}
+
+a.activity-pill__title:hover {
+  color: $blue-grad-start;
+  text-decoration: underline;
+}
