@@ -88,6 +88,8 @@ publication_category:
     title: 'Preprints'
   extendedAbs:
     title: 'Extended Abstracts'
+  report:
+    title: 'Reports'
 
 teaching_category:
   thesis_active:

@@ -67,6 +67,8 @@
         {% assign content = content | append: post.year | append: '.' %}
       {% elsif post.category == 'extendedAbs' %}
         {% assign content = content | append: 'In <i>' | append: post.venue | append: '</i>, ' | append: post.place | append: ', ' | append: post.year | append: '.' %}
+      {% elsif post.category == 'report' %}
+        {% assign content = content | append: 'Published in <i>' | append: post.venue | append: '</i>, ' | append: post.bookdata | append: ', ' | append: post.year | append: '.' %}
       {% endif %}
     {% endif %}
 
