@@ -122,7 +122,7 @@
       \resumeItemListStart
           \resumeItem{Probabilistic Program Verification}
           {I develop automatic techniques to analyze the termination and expected runtime of (probabilistic) programs, i.e., programs that make random choices during execution. I study them via \textit{(probabilistic) term rewrite systems}, a functional formalism that is easily able to express data structures. 
-          My main contribution is the \textit{annotated dependency pair (ADP) framework} for proving and disproving almost-sure termination and for bounding expected runtimes. 
+          My main contribution is the \textit{annotated dependency pair (ADP) framework} for proving and disproving almost-sure termination and for computing bounds on expected runtimes. 
           All methods are implemented in the tool \href{https://aprove.informatik.rwth-aachen.de/}{AProVE}.}
       \resumeItemListEnd
     \resumeSubheading
@@ -130,7 +130,7 @@
       {Student Assistant}{Oct 2018 -- Sep 2022}
           \resumeItemListStart
           \resumeItem{Assisted in Teaching and Research}
-          {Research focussing on automated methods to analyze integer term rewrite systems, a formalism to express programs containing ordinary integer and arbitrary data structures.}
+          {Research focussing on automated methods to analyze integer term rewrite systems, a formalism to express programs containing both integer and arbitrary data structures.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -139,7 +139,7 @@
 \section{\textcolor{ForestGreen}{Research Visits}}
   \resumeSubHeadingListStart
     \item \textbf{Software Architecture Group, Hasso Plattner Institute, Germany} \includegraphics[height=0.7cm]{HPI.png} \hfill (\textit{2026}) \\
-      Joint research on how formal verification can be integrated into the software-development process and what practitioners actually need from such tools.
+      Joint research on how formal verification can be integrated into the software development process and what practitioners actually need from such tools.
     \item \textbf{Chair of Algorithms and Didactics, ETH Zurich, Switzerland} \includegraphics[height=0.4cm]{ETH.png} \hfill (\textit{2025}) \\
       Joint research on the decidability of decision problems over matrices.
     \item \textbf{\href{https://ifip-wg-rewriting.cs.ru.nl/summerschool.html}{14th International School on Rewriting (ISR), Obergurgl, Austria}} \includegraphics[height=0.7cm]{Innsbruck.png} \hfill (\textit{2024}) \\
@@ -176,7 +176,7 @@
     \item \textbf{\href{https://www.unravel.rwth-aachen.de/}{PhD Scholarship -- DFG Research Training Group UnRAVeL}} \hfill (\textit{2022--Present}) \\
       Doctoral funding within the DFG-funded Research Training Group UnRAVeL at RWTH Aachen University.
     \item \textbf{\href{https://termcomp.github.io/}{International Termination and Complexity Competition (termCOMP)}} \hfill (\textit{2023--Present}) \\
-      The tool \href{https://aprove.informatik.rwth-aachen.de/}{AProVE}, of which I have been the main developer since 2023, consistently won first place in a large number of categories at the annual termination competition.
+      The tool \href{https://aprove.informatik.rwth-aachen.de/}{AProVE}, of which I have been the main developer since 2023, consistently won the first place in a large number of categories at the annual termination competition.
     \item \textbf{\href{https://www.rwth-aachen.de/cms/root/wir/rwth-events/wuerdigung-unserer-absolvierenden-und-un/~bejaqo/springorum-denkmuenze/?lidx=1}{Springorum Commemorative Coin}} \hfill (\textit{2022}) \\
       Awarded to the top 10\% of M.\ Sc.\ graduates from each RWTH faculty each year.
     \item \textbf{\href{https://www.rwth-aachen.de/cms/root/studium/lehre/exzellente-lehre/~dhky/dean-s-list/?lidx=1}{Dean's List}} \hfill (\textit{2018, 2019, 2021}) \\
@@ -187,43 +187,48 @@
 %-----------PUBLICATIONS-----------------
 \newpage
 \begin{center}
-  {\Huge\scshape\textcolor{ForestGreen}{Publications}}~{\large (16)}
+  {\Huge\scshape\textcolor{ForestGreen}{Publications}}~{\large (20)}
 \end{center}
 \vspace{-6pt}
 {\color{black}\titlerule}
 \vspace{4pt}
   \resumeSubHeadingListStart
-    \item \textbf{Journal Articles} \sectioncount{2}
+    \item \textbf{Journal Articles} \sectioncount{3}
     \begin{enumerate}
-      \item \textbf{J.-C.\ Kassing}, J.\ Giesl. ``\href{https://www.sciencedirect.com/science/article/pii/S016764232500156X}{The Annotated Dependency Pair Framework for Almost-Sure Termination of Probabilistic Term Rewriting}''. Science of Computer Programming, 2026.
+      \item \textbf{J.-C.\ Kassing}, J.\ Giesl. ``\href{https://www.sciencedirect.com/science/article/pii/S016764232500156X}{The Annotated Dependency Pair Framework for Almost-Sure Termination of Probabilistic Term Rewriting}''. Science of Computer Programming, Vol.\ 251, Article 103417, 2026.
       \item \textbf{J.-C.\ Kassing}, J.\ Giesl. ``\href{https://lmcs.episciences.org/17090}{From Innermost to Full Probabilistic Term Rewriting: Almost-Sure Termination, Complexity, and Modularity}''. Logical Methods in Computer Science, Vol.\ 21(4), 2025.
+      \item E.\ Ahrens, \textbf{J.-C.\ Kassing}. ``\href{https://dl.acm.org/doi/10.1145/3774409.3774413}{Report on the 10th International Conference on Formal Structures for Computation and Deduction (FSCD 2025)}''. ACM SIGLOG News 12(4), 2025.
     \end{enumerate}
     \item \textbf{Conference Papers} \sectioncount{7}
     \begin{enumerate}
-      \item \textbf{J.-C.\ Kassing}, H.\ Nagel, A.\ Schlecht, J.\ Giesl. ``\href{https://arxiv.org/abs/2602.16522}{Disproving (Positive) Almost-Sure Termination of Probabilistic Term Rewriting via Random Walks}''. IJCAR 2026 (to appear).
-      \item \textbf{J.-C.\ Kassing}, L.\ Spitzer, J.\ Giesl. ``\href{https://dl.acm.org/doi/10.1145/3756907.3756917}{Dependency Pairs for Expected Innermost Runtime Complexity and Strong Almost-Sure Termination of Probabilistic Term Rewriting}''. PPDP 2025.
-      \item E.\ Ahrens, \textbf{J.-C.\ Kassing}, J.\ Giesl, J.-P.\ Katoen. ``\href{https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.FSCD.2025.6}{Weighted Rewriting: Semiring Semantics for Abstract Reduction Systems}''. FSCD 2025.
-      \item \textbf{J.-C.\ Kassing}, G.\ Vartanyan, J.\ Giesl. ``\href{https://link.springer.com/chapter/10.1007/978-3-031-63501-4_19}{A Dependency Pair Framework for Relative Termination of Term Rewriting}''. IJCAR 2024.
-      \item \textbf{J.-C.\ Kassing}, S.\ Dollase, J.\ Giesl. ``\href{https://link.springer.com/chapter/10.1007/978-981-97-2300-3_4}{A Complete Dependency Pair Framework for Almost-Sure Innermost Termination of Probabilistic Term Rewriting}''. FLOPS 2024.
-      \item \textbf{J.-C.\ Kassing}, F.\ Frohn, J.\ Giesl. ``\href{https://link.springer.com/chapter/10.1007/978-3-031-57231-9_10}{From Innermost to Full Almost-Sure Termination of Probabilistic Term Rewriting}''. FoSSaCS 2024.
-      \item \textbf{J.-C.\ Kassing}, J.\ Giesl. ``\href{https://link.springer.com/chapter/10.1007/978-3-031-38499-8_20}{Proving Almost-Sure Innermost Termination of Probabilistic Term Rewriting Using Dependency Pairs}''. CADE 2023.
+      \item \textbf{J.-C.\ Kassing}, H.\ Nagel, A.\ Schlecht, J.\ Giesl. ``\href{https://arxiv.org/abs/2602.16522}{Disproving (Positive) Almost-Sure Termination of Probabilistic Term Rewriting via Random Walks}''. In Proc.\ IJCAR'26, (to appear), 2026.
+      \item \textbf{J.-C.\ Kassing}, L.\ Spitzer, J.\ Giesl. ``\href{https://dl.acm.org/doi/10.1145/3756907.3756917}{Dependency Pairs for Expected Innermost Runtime Complexity and Strong Almost-Sure Termination of Probabilistic Term Rewriting}''. In Proc.\ PPDP'25, ACM Article 10, 2025.
+      \item E.\ Ahrens, \textbf{J.-C.\ Kassing}, J.\ Giesl, J.-P.\ Katoen. ``\href{https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.FSCD.2025.6}{Weighted Rewriting: Semiring Semantics for Abstract Reduction Systems}''. In Proc.\ FSCD'25, LIPIcs, Volume 337, 2025.
+      \item \textbf{J.-C.\ Kassing}, G.\ Vartanyan, J.\ Giesl. ``\href{https://link.springer.com/chapter/10.1007/978-3-031-63501-4_19}{A Dependency Pair Framework for Relative Termination of Term Rewriting}''. In Proc.\ IJCAR'24, LNCS 14740, 2024.
+      \item \textbf{J.-C.\ Kassing}, S.\ Dollase, J.\ Giesl. ``\href{https://link.springer.com/chapter/10.1007/978-981-97-2300-3_4}{A Complete Dependency Pair Framework for Almost-Sure Innermost Termination of Probabilistic Term Rewriting}''. In Proc.\ FLOPS'24, LNCS 14659, 2024.
+      \item \textbf{J.-C.\ Kassing}, F.\ Frohn, J.\ Giesl. ``\href{https://link.springer.com/chapter/10.1007/978-3-031-57231-9_10}{From Innermost to Full Almost-Sure Termination of Probabilistic Term Rewriting}''. In Proc.\ FoSSaCS'24, LNCS 14575, 2024.
+      \item \textbf{J.-C.\ Kassing}, J.\ Giesl. ``\href{https://link.springer.com/chapter/10.1007/978-3-031-38499-8_20}{Proving Almost-Sure Innermost Termination of Probabilistic Term Rewriting Using Dependency Pairs}''. In Proc.\ CADE'23, LNCS 14132, 2023.
     \end{enumerate}
     \item \textbf{Book Chapters} \sectioncount{1}
     \begin{enumerate}
       \item \textbf{J.-C.\ Kassing}, J.\ Giesl. ``\href{https://link.springer.com/chapter/10.1007/978-3-031-75783-9_14}{Annotated Dependency Pairs for Full Almost-Sure Termination of Probabilistic Term Rewriting}''. Principles of Verification (Festschrift), LNCS 15260, 2024.
     \end{enumerate}
-    \item \textbf{Workshop Papers \& Extended Abstracts} \sectioncount{5}
+    \item \textbf{Workshop Papers \& Extended Abstracts} \sectioncount{9}
     \begin{enumerate}
+      \item \textbf{J.-C.\ Kassing}, A.\ Schüßler, T.\ Sokolowski, J.\ Giesl. ``\href{https://jckassing.com/files/paper/AProVE_CoCo26.pdf}{AProVE'26: Confluence Analysis in a Termination Tool}''. IWC 2026.
+      \item \textbf{J.-C.\ Kassing}, M.\ Leven Rosarius, H.\ Nagel, J.\ Giesl. ``\href{https://jckassing.com/files/paper/preach.pdf}{Disproving Reachability in Probabilistic Term Rewriting}''. IWC 2026.
+      \item \textbf{J.-C.\ Kassing}, A.\ Scheid, H.\ Nagel, J.\ Giesl. ``\href{https://jckassing.com/files/paper/ASTDecisionAlg.pdf}{A First Decision Procedure for Almost-Sure Termination of Probabilistic Term Rewriting}''. VeriProb 2026.
+      \item \textbf{J.-C.\ Kassing}, L.\ Spitzer, J.\ Giesl. ``\href{https://jckassing.com/files/paper/ShortPPDP.pdf}{Dependency Pairs for Expected Runtime Complexity of Probabilistic Term Rewriting}''. WST 2026.
       \item \textbf{J.-C.\ Kassing}, T.\ Sokolowski. ``\href{https://jckassing.com/files/paper/AProVE_CoCo25.pdf}{AProVE25: Confluence Analysis in a Termination Tool}''. IWC 2025.
       \item F.\ Frohn, C.\ Fuhs, J.\ Giesl, \textbf{J.-C.\ Kassing}, N.\ Lommen. ``\href{https://jckassing.com/files/paper/AProVE_WST25.pdf}{AProVE: Becoming Open Source and Recent Improvements}''. WST 2025.
       \item \textbf{J.-C.\ Kassing}, J.\ Giesl. ``\href{https://jckassing.com/files/paper/ProbModularity_WST25.pdf}{Modularity of Termination in Probabilistic Term Rewriting}''. WST 2025.
       \item \textbf{J.-C.\ Kassing}, G.\ Vartanyan, J.\ Giesl. ``\href{https://jckassing.com/files/paper/RelativeADP_WST25.pdf}{A Dependency Pair Framework for Relative Termination of Term Rewriting}''. WST 2025.
       \item \textbf{J.-C.\ Kassing}, J.\ Giesl. ``\href{https://arxiv.org/abs/2307.10002}{Dependency Tuples for Almost-Sure Innermost Termination of Probabilistic Term Rewriting}''. WST 2023.
     \end{enumerate}
-    \item \textbf{Reports} \sectioncount{1}
-    \begin{enumerate}
-      \item E.\ Ahrens, \textbf{J.-C.\ Kassing}. ``\href{https://dl.acm.org/doi/10.1145/3774409.3774413}{Report on the 10th International Conference on Formal Structures for Computation and Deduction (FSCD 2025)}''. ACM SIGLOG News 12(4), 2025.
-    \end{enumerate}
+    % \item \textbf{Reports} \sectioncount{1}
+    % \begin{enumerate}
+    %   \item E.\ Ahrens, \textbf{J.-C.\ Kassing}. ``\href{https://dl.acm.org/doi/10.1145/3774409.3774413}{Report on the 10th International Conference on Formal Structures for Computation and Deduction (FSCD 2025)}''. ACM SIGLOG News 12(4), 2025.
+    % \end{enumerate}
   \resumeSubHeadingListEnd
 
 %-----------TEACHING EXPERIENCE-----------------
@@ -244,19 +249,19 @@
       \item \textbf{Programming Concepts} (B.\ Sc., $\sim$800 participants) \hfill (\textit{2022--2025}) \\
         Introduction to imperative (Java) and declarative (Haskell, Prolog) programming and to program verification via the Hoare calculus. \textcolor{BrickRed}{(Nominated for teaching award)}
     \end{enumerate}
-    \item \textbf{Seminars (Supervisor, 1--30 students each)}
+    \item \textbf{Seminars} (Supervisor, $\sim$20 participants)
     \begin{enumerate}
       \item Advanced Programming Concepts \hfill (\textit{2023--2026})
       \item Satisfiability Checking \hfill (\textit{2025, 2026})
       \item Verification Techniques \hfill (\textit{2022--2025})
     \end{enumerate}
-    \item \textbf{Student Assistant (during B.\ Sc.\ and M.\ Sc.)}
+    \item \textbf{Student Assistant} (during B.\ Sc.\ and M.\ Sc.)
     \begin{enumerate}
       \item Complexity Theory \hfill (\textit{2021})
       \item Mathematical Logic \hfill (\textit{2021})
       \item Programming Concepts \hfill (\textit{2018, 2019})
       \item Data Structures and Algorithms \hfill (\textit{2019})
-      \item Formal Systems, Automata and Processes \hfill (\textit{2018})
+      \item Formal Systems, Automata, and Processes \hfill (\textit{2018})
     \end{enumerate}
   \resumeSubHeadingListEnd
 
@@ -275,7 +280,7 @@
         \item Michelle Dahmen: ``\textit{Proving Almost-Sure Termination of Term Rewriting with Non-Constant Probabilities}''
         \item Kiran Monteiro Pai: ``\textit{Reachability Analysis for Probabilistic Term Rewriting Systems}'' (\textcolor{BrickRed}{related paper ongoing})
         \item Tobias Sokolowski: ``\textit{Proving Confluence of Term Rewriting within AProVE}''
-        \item Arion Scheid: ``\textit{Using Stochastic Context Free Grammars to decide Almost Sure Termination for Probabilistic Term Rewriting Systems}'' (\textcolor{BrickRed}{related paper ongoing})
+        \item Arion Scheid: ``\textit{Using Stochastic Context Free Grammars to Decide Almost Sure Termination for Probabilistic Term Rewriting Systems}'' (\textcolor{BrickRed}{related paper ongoing})
         \item Ivan Zlatin: ``\textit{Analyzing Derivational Complexity via Innermost Derivational Complexity}''
         \item Alexander Schlecht: ``\textit{Counting the Probabilities of Loops: Disproving (Strong) Almost-Sure Termination of Probabilistic Rewriting Automatically}'' (\href{https://arxiv.org/abs/2602.16522}{\textcolor{BrickRed}{related paper to appear}})
         \item Henri Nagel: ``\textit{Refining the Dependency Framework for Basic Start Terms}''
@@ -339,7 +344,7 @@
       \item \href{https://jckassing.com/files/slides/WST25_Modularity.pdf}{\textit{Modularity of Termination in Probabilistic Term Rewriting}}. WST 2025, Leipzig, Germany (Sep 2025).
       \item \href{https://jckassing.com/files/slides/Deduktionstreffen25.pdf}{\textit{Analyzing Weighted Abstract Reduction Systems via Semirings}}. Deduktionstreffen 2025, Stuttgart, Germany (Aug 2025).
       \item \href{https://jckassing.com/files/slides/Modularity.pdf}{\textit{Modularity of Termination in Probabilistic Term Rewriting}}. UnRAVeL Biweekly Meeting, Aachen, Germany (Nov 2024).
-      \item \href{https://jckassing.com/files/slides/TeReSe24.pdf}{\textit{A Dependency Pair Framework for Relative Termination of Term Rewriting}}. TeReSe 2024, Amsterdam, Netherlands (Jun 2024).
+      \item \href{https://jckassing.com/files/slides/TeReSe24.pdf}{\textit{A Dependency Pair Framework for Relative Termination of Term Rewriting}}. TeReSe 2024, Amsterdam, The Netherlands (Jun 2024).
       \item \href{https://jckassing.com/files/slides/ROCKS23.pdf}{\textit{Proving Almost-Sure Termination of Probabilistic Programs Using Term Rewriting}}. ROCKS 2023, Saarbr\"ucken, Germany (Sep 2023).
       \item \href{https://jckassing.com/files/slides/WST23.pdf}{\textit{Dependency Tuples for Almost-Sure Innermost Termination of Probabilistic Term Rewriting}}. WST 2023, Obergurgl, Austria (Aug 2023).
       \item \href{https://jckassing.com/files/slides/TeReSe23.pdf}{\textit{Proving Almost-Sure Innermost Termination of Probabilistic Term Rewriting Using Dependency Pairs}}. TeReSe 2023, Aachen, Germany (Jun 2023).
@@ -352,15 +357,15 @@
     \item \textbf{Workshop Organization}
     \begin{enumerate}
       \item \textbf{\href{https://www.unravel.rwth-aachen.de/cms/unravel/das-graduiertenkolleg/aktuelle-veranstaltungen/~bjgvkb/unravel-final-workshop-2026/?lidx=1}{UnRAVeL Symposium 2026}} \hfill (\textit{2026}) \\
-        Organized the three-day closing symposium of the DFG Research Training Group UnRAVeL at RWTH Aachen University, with excellent invited speakers from all over the world.
+        Organized the three-day closing symposium of the DFG Research Training Group UnRAVeL at RWTH Aachen University, with invited speakers from all over the world.
       \item \textbf{\href{https://www.unravel.rwth-aachen.de/go/id/bdnjuy}{UnRAVeL Autumn Workshop 2023}} \hfill (\textit{2023}) \\
         Organized UnRAVeL's annual autumn workshop, inviting alumni who had finished their PhD to share their career experiences.
       \item \textbf{\href{https://verify.rwth-aachen.de/jckassing/terese23/}{25th Informal Workshop on Term Rewriting (TeReSe 2023)}} \hfill (\textit{2023}) \\
-        Hosted the long-running TeReSe series in Aachen: An afternoon of presentations with discussions that fosters exchange within the term-rewriting community.
+        Hosted the long-running TeReSe series in Aachen: An afternoon of presentations with discussions that fosters exchange within the term rewriting community.
     \end{enumerate}
     \item \textbf{Program Committee}: \href{https://wpte2026.github.io/}{WPTE 2026} (Workshop on Rewriting Techniques for Program Transformations and Evaluation).
     \item \textbf{Peer Review (Conferences)}: IJCAR 2026, FSCD 2026, TACAS 2026, FroCoS 2025, CADE 2025, IJCAR 2024, LPAR 2024, the Festschrift for J.-P.\ Katoen 2024, and FroCoS 2023.
-    \item \textbf{Peer Review (Journals)}: Logical Methods in Computer Science (2026), Journal of Automated Reasoning (2026), Formal Aspects of Computing (2025) and the Journal of Logical and Algebraic Methods in Programming (2024).
+    \item \textbf{Peer Review (Journals)}: Logical Methods in Computer Science (2026), Journal of Automated Reasoning (2026), Formal Aspects of Computing (2025), and the Journal of Logical and Algebraic Methods in Programming (2024).
   \resumeSubHeadingListEnd
 
 %-----------MANAGEMENT AND LEADERSHIP EXPERIENCE-----------------
@@ -407,7 +412,7 @@
   {\small These are projects that I actively co-developed during my career.}
   \resumeSubHeadingListStart
     \resumeSubItem{\href{https://aprove.informatik.rwth-aachen.de/}{AProVE}}
-      {AProVE (Automated Program Verification Environment) automatically proves termination, runtime complexity, and safety of programs written in languages such as Java, C, Haskell, and Prolog, as well as several term rewriting formalisms. It regularly wins first place in a large number of categories at the annual International Termination Competition. I maintain this project as the main developer since 2023. All my research on probabilistic term rewriting is implemented in AProVE and successfully evaluated.}
+      {AProVE (Automated Program Verification Environment) automatically proves termination, runtime complexity, and safety of programs written in languages such as Java, C, Haskell, and Prolog, as well as several term rewriting formalisms. It regularly wins the first place in a large number of categories at the annual International Termination and Complexity Competition. I maintain this project as the main developer since 2023. All my research on probabilistic term rewriting is implemented in AProVE and has been evaluated successfully.}
     \resumeSubItem{\href{https://app-partner.com/}{BWL Champion}}
       {BWL Champion is a gamified quiz app for learning business administration, usable both individually and competitively, and is employed in courses at several German universities. Its didactic concept received a best paper award in the teaching track of CARF 2025. 
       It strengthens teaching through interactive, self-paced learning across institutions, and underpins research on gamification and digital learning in higher education.}
