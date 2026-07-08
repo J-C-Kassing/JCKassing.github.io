@@ -184,3 +184,8 @@ a.activity-pill__title:hover {
   color: $blue-grad-start;
   text-decoration: underline;
 }
+
+/* Reviewer entries: smaller text */
+.activity-pill--review .activity-pill__title {
+  font-size: $type-size-55;
+}

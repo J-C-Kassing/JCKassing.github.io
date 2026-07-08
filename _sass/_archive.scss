@@ -121,6 +121,12 @@
   & + p {
     text-indent: 0;
   }
+
+  /* Take up no space when the excerpt is empty */
+  &:empty {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .archive__item-teaser {
@@ -181,8 +187,8 @@
   .list__item {
     position: relative;
     overflow: hidden;
-    margin-bottom: 0.85rem;
-    padding: 0.7rem 1.2rem 0.8rem calc(1.2rem + 4px);
+    margin-bottom: 0.5rem;
+    padding: 0.45rem 0.85rem 0.5rem calc(0.85rem + 4px);
     background: #fff;
     border: 1px solid mix(#fff, $gray, 78%);
     border-radius: 10px;
@@ -206,25 +212,38 @@
     margin-bottom: 0;
   }
 
-  /* Larger, easier-to-read body text inside the boxes */
+  /* Smaller, tighter item titles */
+  .archive__item-title,
+  .archive__item-title-pc,
+  .archive__item-title-review {
+    margin-top: 0.15em;
+    margin-bottom: 0.2em;
+    font-size: $type-size-54;
+  }
+
+  /* Smaller body text inside the boxes */
   .archive__item-content {
-    font-size: $type-size-5;
+    font-size: $type-size-55;
   }
 
   .archive__item-excerpt {
-    font-size: $type-size-5;
+    font-size: $type-size-55;
   }
 
   .archive__item-links {
-    font-size: $type-size-55;
+    font-size: $type-size-6;
+  }
+
+  .page__meta {
+    font-size: $type-size-6;
   }
 
   /* Small per-year sub-headers */
   .year-heading {
-    margin: 1.6em 0 0.7em;
+    margin: 1.1em 0 0.5em;
     padding-bottom: 0.25em;
     font-family: $sans-serif-narrow;
-    font-size: $type-size-5;
+    font-size: $type-size-54;
     font-weight: 700;
     letter-spacing: 0.03em;
     color: $blue-grad-start;
