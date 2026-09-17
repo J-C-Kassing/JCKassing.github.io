@@ -84,6 +84,8 @@ publication_category:
     title: 'Journal Articles'  
   books:
     title: 'Book Chapters' 
+  edited:
+    title: 'Edited Volumes'
   preprint:
     title: 'Preprints'
   extendedAbs:

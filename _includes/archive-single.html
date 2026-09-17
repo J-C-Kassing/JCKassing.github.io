@@ -63,6 +63,8 @@
         {% assign content = content | append: 'Published in <i>' | append: post.venue | append: '</i>, ' | append: post.bookdata | append: ', ' | append: post.year | append: '.' %}
       {% elsif post.category == 'books' %}
         {% assign content = content | append: 'Published in <i>' | append: post.venue | append: '</i>, ' | append: post.bookdata | append: ', ' | append: post.year | append: '.' %}
+      {% elsif post.category == 'edited' %}
+        {% assign content = content | append: 'Published by <i>' | append: post.venue | append: '</i>, ' | append: post.bookdata | append: ', ' | append: post.year | append: '.' %}
       {% elsif post.category == 'preprint' %}
         {% assign content = content | append: post.year | append: '.' %}
       {% elsif post.category == 'extendedAbs' %}
