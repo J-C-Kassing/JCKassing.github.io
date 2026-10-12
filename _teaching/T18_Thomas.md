@@ -2,7 +2,7 @@
 title: "Confluence Analysis of Weighted Abstract Rewrite Systems"
 author: "Thomas Neudörfl"
 collection: teaching
-category: thesis_active
+category: thesis
 venue: "RWTH Aachen"
 year: "Summer, 2026"
 ---

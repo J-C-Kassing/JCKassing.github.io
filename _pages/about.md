@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I have been a research assistant and PhD student in the [Research Group “Pro­gram­ming Languages and Verification”](https://verify.rwth-aachen.de/index_e.html) headed by Professor Jürgen Giesl since October 2022 and I am one of the main developers of the [Automated Program Verification Environment (AProVE)](https://aprove.informatik.rwth-aachen.de/) tool. Moreover, I am part of the interdisciplinary Research Training Group [UnRAVeL](https://www.unravel.rwth-aachen.de/cms/~ofgh/unravel/lidx/1/).
+On October 1, 2026, I successfully defended my dissertation *“Automatically Analyzing Termination and Expected Runtime Complexity of Probabilistic Term Rewriting”*. Currently, I am a post-doctoral researcher in the [Research Group “Pro­gram­ming Languages and Verification”](https://verify.rwth-aachen.de/index_e.html) headed by Professor Jürgen Giesl, where I previously worked as a research assistant and PhD student since October 2022. I am one of the main developers of the [Automated Program Verification Environment (AProVE)](https://aprove.informatik.rwth-aachen.de/) tool. Moreover, I was part of the interdisciplinary Research Training Group [UnRAVeL](https://www.unravel.rwth-aachen.de/cms/~ofgh/unravel/lidx/1/).
 
 **Personal Research**:
 My research is on theoretical computer science, with a particular focus on automated reasoning and the verification of probabilistic programs. In a world where code is increasingly generated automatically,
@@ -15,7 +15,7 @@ e.g., through program synthesis, AI-assisted development, or template-based code
 automatic formal verification is more pressing than ever. 
 I strongly believe that formal verification will remain an essential role in building reliable software systems in the future.
 
-In my PhD, I study fully automated termination and complexity analysis for functional programs that manipulate data structures. More specifically, I investigate the termination and expected complexity of probabilistic term rewriting systems, a simple yet Turing complete foundational model of computation.
+In my PhD, I studied fully automated termination and complexity analysis for functional programs that manipulate data structures. More specifically, I investigate the termination and expected complexity of probabilistic term rewriting systems, a simple yet Turing complete foundational model of computation.
 
 An example of a term rewriting system for addition on natural numbers is shown below.
 Here, natural numbers are represented by the successor function s(...) and the zero function 0.
