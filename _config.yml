@@ -78,6 +78,8 @@ author:
 
 # Publication and Teaching Category - The following the list of publication categories and their headings
 publication_category: 
+  dissertation:
+    title: 'Dissertation'
   conferences:
     title: 'Conference Papers'
   journal:

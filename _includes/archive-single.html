@@ -57,7 +57,9 @@
       {% assign content = content | append: post.venue | append: ', ' | append: post.year | append: '. ' %}
 
     {% elsif post.collection == 'publications' %}
-      {% if post.category == 'conferences' %}
+      {% if post.category == 'dissertation' %}
+        {% assign content = content | append: 'Dissertation, <i>' | append: post.venue | append: '</i>, ' | append: post.year | append: '.' %}
+      {% elsif post.category == 'conferences' %}
         {% assign content = content | append: 'In <i>' | append: post.venue | append: '</i>, ' | append: post.place | append: ', ' | append: post.bookdata | append: ', ' | append: post.year | append: '.' %}
       {% elsif post.category == 'journal' %}
         {% assign content = content | append: 'Published in <i>' | append: post.venue | append: '</i>, ' | append: post.bookdata | append: ', ' | append: post.year | append: '.' %}
@@ -82,8 +84,9 @@
     {% endif %}
 
     {% assign links = "" %}
+    {% if post.category == 'dissertation' %}{% assign download_label = 'Download Dissertation' %}{% else %}{% assign download_label = 'Download Paper' %}{% endif %}
     {% if post.paperurl %}
-      {% assign links = links | append: '<a href="' | append: post.paperurl | append: '">Download Paper</a>' %}
+      {% assign links = links | append: '<a href="' | append: post.paperurl | append: '">' | append: download_label | append: '</a>' %}
     {% endif %}
     {% if post.arxivurl %}
       {% if links != "" %}{% assign links = links | append: ' | ' %}{% endif %}

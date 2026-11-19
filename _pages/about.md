@@ -7,7 +7,14 @@ redirect_from:
   - /about.html
 ---
 
-On October 1, 2026, I successfully defended my dissertation *“Automatically Analyzing Termination and Expected Runtime Complexity of Probabilistic Term Rewriting”*. Currently, I am a post-doctoral researcher in the [Research Group “Pro­gram­ming Languages and Verification”](https://verify.rwth-aachen.de/index_e.html) headed by Professor Jürgen Giesl, where I previously worked as a research assistant and PhD student since October 2022. I am one of the main developers of the [Automated Program Verification Environment (AProVE)](https://aprove.informatik.rwth-aachen.de/) tool. Moreover, I was part of the interdisciplinary Research Training Group [UnRAVeL](https://www.unravel.rwth-aachen.de/cms/~ofgh/unravel/lidx/1/).
+On October 1, 2026, I successfully defended my dissertation [*“Automatically Analyzing Termination and Expected Runtime Complexity of Probabilistic Term Rewriting”*](/files/Diss_Kassing.pdf). Currently, I am a post-doctoral researcher in the [Research Group “Pro­gram­ming Languages and Verification”](https://verify.rwth-aachen.de/index_e.html) headed by Professor Jürgen Giesl, where I previously worked as a research assistant and PhD student since October 2022. I am one of the main developers of the [Automated Program Verification Environment (AProVE)](https://aprove.informatik.rwth-aachen.de/) tool. Moreover, I was part of the interdisciplinary Research Training Group [UnRAVeL](https://www.unravel.rwth-aachen.de/cms/~ofgh/unravel/lidx/1/).
+
+<div style="text-align: center; margin: 1.5em 0;">
+  <a href="/files/Diss_Kassing.pdf" title="Open my dissertation (PDF)">
+    <img src="/images/Diss_cover.jpg" alt="Cover of my dissertation &quot;Automatically Analyzing Termination and Expected Runtime Complexity of Probabilistic Term Rewriting&quot;" style="max-width: 280px; width: 100%; height: auto; border-radius: 4px; box-shadow: 0 4px 12px rgba(0,0,0,0.25);">
+  </a>
+  <div style="font-size: 0.8em; margin-top: 0.5em;">Click on me!</div>
+</div>
 
 **Personal Research**:
 My research is on theoretical computer science, with a particular focus on automated reasoning and the verification of probabilistic programs. In a world where code is increasingly generated automatically,

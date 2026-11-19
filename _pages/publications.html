@@ -16,7 +16,7 @@ author_profile: true
       <h2>{{ category[1].title }}</h2><hr />
       {% assign posts_by_year = category_posts | group_by: "year" | sort: "name" | reverse %}
       {% for year_group in posts_by_year %}
-        <h3 class="year-heading">{{ year_group.name }}</h3>
+        {% unless category[0] == 'dissertation' %}<h3 class="year-heading">{{ year_group.name }}</h3>{% endunless %}
         {% assign year_posts = year_group.items | reverse %}
         {% for post in year_posts %}
           {% include archive-single.html %}

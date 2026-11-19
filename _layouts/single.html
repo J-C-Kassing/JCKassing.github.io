@@ -52,8 +52,9 @@ layout: default
         {% endif %}
 
         {% assign links = "" %}
+        {% if page.category == 'dissertation' %}{% assign download_label = 'Download Dissertation' %}{% else %}{% assign download_label = 'Download Paper' %}{% endif %}
         {% if page.paperurl %}
-          {% assign links = links | append: '<a href="' | append: page.paperurl | append: '">Download Paper</a>' %}
+          {% assign links = links | append: '<a href="' | append: page.paperurl | append: '">' | append: download_label | append: '</a>' %}
         {% endif %}
         {% if page.arxivurl %}
           {% if links != "" %}{% assign links = links | append: ' | ' %}{% endif %}
